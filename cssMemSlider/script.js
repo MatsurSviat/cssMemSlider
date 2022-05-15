@@ -1,16 +1,22 @@
+    const slides = document.getElementsByClassName('item');
+    const dots = document.getElementsByClassName('slider-dots-item');
+    const text = document.getElementsByClassName('silder-text')
+
+
+// initial index
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// current index function
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+// main function
 
-    const slides = document.getElementsByClassName('item');
-    const dots = document.getElementsByClassName('slider-dots-item');
-    const text = document.getElementsByClassName('silder-text')
+function showSlides(n) {
 
     
     if (n > slides.length) {
@@ -36,4 +42,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = 'block';
     dots[slideIndex - 1].className += ' active';
     text[slideIndex -1].style.display = 'block';
+
 }
+

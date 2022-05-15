@@ -34,11 +34,32 @@ body {
     top: 0%;
     color: rosybrown;
     font-size: 35px;
+    margin: auto 0;
 } 
 
 .slider-dots {
     text-align: center;
-    justify-content: center;
+    margin: auto 0;
+}
+
+.slider-dot {
+    display: inline-block;
+    cursor: pointer !important;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    padding-bottom: 1rem;
+    padding-right: 0.3rem;
+}
+
+.slider-dot:hover > .slider-dots-item {
+    background-color: white;
+    border: solid;
+    border-color: white;
+    height: 12px;
+    width: 12px;
 }
 
 .slider-dots-item{
@@ -67,6 +88,12 @@ body {
     cursor: pointer;
 }
 
+.slider-dot:hover > .active {
+    background-color: transparent;
+    border: solid;
+    border-color: white;
+}
+
 .active:hover {
     background-color: transparent;
     border: solid;
@@ -92,7 +119,7 @@ body {
 
 .bottom .silder-text {
     animation-name: appear;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 @keyframes appear {
