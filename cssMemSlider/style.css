@@ -220,3 +220,10 @@ border: 0.05rem solid rgb(108, 108, 110);
 border-radius: 0.5rem;
 }
 }
+
+.link_pull {
+    margin-top: 40px;
+    text-decoration: solid;
+    color: aliceblue;
+    font-size: 40px;
+}
